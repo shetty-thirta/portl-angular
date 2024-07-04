@@ -1,0 +1,149 @@
+<div class="user-profile-container">
+    <div class="user-profile-header">
+        <div class="menu-container" style="width: 40%;display: block;">
+            <div class="icon-box">
+                <mat-icon svgIcon="menu">
+                </mat-icon>
+            </div>
+            <div class="icon-box">
+                <mat-icon svgIcon="notif">
+                </mat-icon>
+            </div>
+            <div class="icon-box">
+                <mat-icon svgIcon="graph">
+                </mat-icon>
+            </div>
+            
+        </div>
+        <div class="company-logo-container">
+            <img src="../assets/portl-black.png" alt="Portl Logo" style="width: 20%;
+            height: 75%;
+            margin-right: 400px;">
+        </div>
+        <div class="back-container">
+            <mat-icon svgIcon="back">
+            </mat-icon>
+        </div>
+    </div>
+
+    <div class="user-general-info">
+            <div class="user-profile-picture">
+                <img class="user-profile-image" src="../assets/profile.jpg" alt="Profile Picture" >
+            </div>
+
+            <div class="user-details">
+
+                <div class="user-profile-title">
+                    General Information
+                </div>
+                <div style="display: inline-flex; flex-direction: row;">
+                    <div class="question">
+                        <input type="text" required="" [(ngModel)]="this.userData.name">
+                        <label>Name</label>
+                    </div>
+                    <div class="question">
+                        <input type="email" required="" [(ngModel)]="this.userData.email">
+                        <label>Email</label>
+                    </div>
+                    <div class="question">
+                        <input type="number" required="" [(ngModel)]="this.userData.contactNumber">
+                        <label>Phone Number</label>
+                    </div>
+                    <div class="question">
+                        <input type="text" required="" [(ngModel)]="this.userData.gender">
+                        <label>Gender</label>
+                    </div>
+                </div>
+
+                <div style="display: inline-flex; flex-direction: row;">
+                    <div class="question">
+                        <input type="number" required="" [(ngModel)]="this.userData.age">
+                        <label>Age</label>
+                    </div>
+                    <div class="question">
+                        <input type="number" required="" [(ngModel)]="this.userData.height">
+                        <label>Height</label>
+                    </div>
+                    <div class="question">
+                        <input type="number" required="" [(ngModel)]="this.userData.weight">
+                        <label>Weight</label>
+                    </div>
+                    <div class="question">
+                        <input type="text" required="" [(ngModel)]="this.userData.location">
+                        <label>Location</label>
+                    </div>
+                    
+                </div>
+            </div>
+    </div>
+    <div class="user-fitness-info">
+        <div class="user-subscription">
+            <img src="../assets/subscription.jpg" alt="Subscription" style="width: 60%;
+    height: 50%;">
+            <span style="font-size: 30px;
+    font-weight: 500;">Portl Starter</span>
+            <span style="font-size: 20px;
+    font-weight: 100;">Monthly</span>
+            <span style="    font-size: 25px;
+    font-weight: bold;">150 $</span>
+
+        </div>
+        <div class="user-fitness-stats">
+            <div class="user-profile-title">
+                Achievements !
+            </div>
+            <div class="metric-container">
+                <div class="metric-box">
+                    <mat-icon svgIcon="fire">
+                    </mat-icon>
+                    <span class="metric-title"> 34,850 kcal</span>
+                </div>
+                <div class="metric-box">
+                    <mat-icon svgIcon="workout">
+                    </mat-icon>
+                    <span class="metric-title"> 165 workouts</span>
+                </div>
+            </div>
+            <div class="metric-container">
+                <div class="metric-box">
+                    <mat-icon svgIcon="badge">
+                    </mat-icon>
+                    <span class="metric-title"> 12 badge</span>
+                </div>
+                <div class="metric-box">
+                    <mat-icon svgIcon="time">
+                    </mat-icon>
+                    <span class="metric-title"> 86 hrs</span>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <div class="user-goals">
+            <div class="user-profile-title">
+                Personal Goals
+            </div>
+            <div class="goal-box">
+                <mat-icon svgIcon="water">
+                </mat-icon>
+                <span class="goal-title" >WATER</span>
+                <span  class="goal-value">3.5 L</span>
+            </div>
+            <div class="goal-box">
+                <mat-icon svgIcon="steps">
+                </mat-icon>
+                <span class="goal-title" >STEPS</span>
+                <span  class="goal-value">7.5 K</span>
+            </div>
+            <div class="goal-box">
+                <mat-icon svgIcon="sleep">
+                </mat-icon>
+                <span class="goal-title" >SLEEP</span>
+                <span  class="goal-value">8 HRS</span>
+            </div>
+
+        </div>
+    </div>
+</div>   
