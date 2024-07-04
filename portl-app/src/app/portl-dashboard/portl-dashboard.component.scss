@@ -1,0 +1,561 @@
+.dashboard-container{
+    position: fixed;
+    background-color: #e6e6e6;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.dashboard-header{
+    position: inherit;
+    width: 96%;
+    top: 8%;
+    left: 50%;
+    display: flex;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    height: 6%;
+
+    .menu-container{
+        .icon-box{
+            width: 7%;
+            height: 50%;
+            margin-right: 15px;
+            display: inline-block;
+            background: white;
+            border-radius: 50%;
+            float: left;
+            padding: 10px 10px;
+            
+        }
+        .mat-icon{
+            user-select: none;
+            background-repeat: no-repeat;
+            display: inline-block;
+            fill: currentColor;
+            margin-top:2px;
+            height: 20px !important;
+            width: 20px !important;
+            overflow: hidden;
+        }
+        
+    }
+    .company-logo-container{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .user-profile-container{
+        background: white;
+        border-radius: 30px;
+        float: right;
+        margin-left: 160px;
+        width: 20%;
+        display: flex;
+        flex-direction: row;
+
+        .user-profile-image-box{
+            padding: 5px 5px;
+            width: 15%;
+            .user-profile-image{
+                width: 100%;
+                margin-right: 10px;
+                border-radius: 50%;
+                height: 100%;
+            }
+        }
+        .user-profile-name-box{
+            display: flex;
+            width: 70%;
+            margin-left: 10px;
+            text-align: left;
+            flex-direction: column;
+
+            .user-profile-name-upper{
+                font-size: 13px;
+                line-height: 25px;
+                font-weight: 400;
+                color: #919191;
+                font-family: "Helvetica Neue";
+            }
+            .user-profile-name-lower{
+                font-size: 18px;
+                line-height: 15px;
+                font-weight: 300;
+                color: #000000;
+                font-family: "Helvetica Neue";
+            }
+
+            
+        }
+
+        .mat-icon{
+            user-select: none;
+            background-repeat: no-repeat;
+            display: inline-block;
+            fill: #4b4d4b;
+            height: 20px !important;
+            width: 20px !important;
+            margin-top: 13px;
+            margin-right: 15px;
+            overflow: hidden;
+        }
+
+    }
+}
+
+.dashboard-info{
+    position: fixed;
+    width: 96%;
+    top: 16%;
+    height: 8%;
+    display: flex;
+    flex-direction: row;
+    background: white;
+    left: 50%;
+    border-radius: 30px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    line-height: 50px;
+
+    .days-container{
+        width: 60%;
+        display: inline-flex;
+        font-size: 20px;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+    }
+
+    .date-container,.search-container{
+        width: 20%;
+        margin: 8px 6px;
+        border-radius: 30px;
+        display: flex;
+        height: 75%;
+        flex-direction: row;
+        background: #e6e6e6;
+
+        .calendar-icon-box{
+            width: 8%;
+            height: 50%;
+            margin-top: 2px;
+            margin-right: 3px;
+            background: white;
+            border-radius: 50%;
+            float: right;
+            align-items: center;
+            display: flex;
+            padding: 10px 10px;
+        }
+
+        .search-icon-box{
+            width: 8%;
+            height: 50%;
+            margin-top: 2px;
+            margin-left: 3px;
+            background: white;
+            border-radius: 50%;
+            float: right;
+            align-items: center;
+            display: flex;
+            padding: 10px 10px;
+        }
+
+        .calendar-icon,.search-icon{
+            user-select: none;
+            background-repeat: no-repeat;
+            display: inline-block;
+            fill: currentColor;
+            margin-left: 4px;
+            height: 40px !important;
+            width: 15px !important;
+            overflow: hidden;
+        }
+
+        .dashboard-search-bar{
+            height: 90%;
+            border: none;
+            background: transparent;
+            margin-left: 3px;
+            font-size: 17px;
+            color: #4b4d4b;
+            font-family: "Helvetica Neue";
+        }
+
+        .date-box{
+            float: left;
+            color: #4b4d4b;
+            margin-left: 20px;
+
+        }
+    }
+}
+
+.dashboard-body{
+    position: inherit;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    top: 58%;
+    left: 52%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    line-height: 30px;
+
+    .dashboard-body-left{
+        width: 48%;
+        background: transparent;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 5px;
+        border-radius: 30px;
+
+        .dashboard-title-bar{
+            display: inline-flex;
+            width: 100%;
+            height: 20%;
+            background: white;
+            border-radius: 30px;
+            flex-direction: row;
+            font-family: "Helvetica Neue";
+
+            .title-box{
+                width: 60%;
+                text-align: left;
+                float: left;
+                font-size: 20px;
+                color: #4b4d4b;
+                font-weight: 400;
+                margin-left: 20px;
+            }
+            .days-box{
+                width: 40%;
+                font-size: 17px;
+                font-weight: 300;
+                float: right;
+                text-align: right;
+                margin-right: 20px;
+            }
+        }
+        .dashboard-activity-box{
+            display: inline-flex;
+            flex-direction: row;
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            height: 80%;
+
+            .activity-type{
+                width: 25%;
+                margin-left: 2px;
+                border-radius: 30px;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                border: 1px solid white;
+
+                .activity-icon-box{
+                    width: 10%;
+                    height: 30%;
+                    margin-top: 10px;
+                    margin-right: 15px;
+                    display: inline-block;
+                    border-radius: 50%;
+                    float: left;
+                    padding: 10px 10px;
+
+                    .activity-icon{
+                        user-select: none;
+                        background-repeat: no-repeat;
+                        display: inline-block;
+                        fill: white;
+                        height: 30px !important;
+                        width: 30px !important;
+                        overflow: hidden;
+                    }
+                }
+
+                .activity-value{
+                    height: 70%;
+                    text-align: center;
+                    width: 40%;
+                    font-weight: 500;
+                    color: white;
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                    justify-content: center;
+                    align-items: center;
+                    letter-spacing: 1px;
+                    display: inline-flex;
+                    font-family: "Helvetica Neue";
+                }
+            }
+        }
+
+        
+
+        .dashboard-left-upper{
+            display: flex;
+            flex-direction: column;
+            background: transparent;
+            height: 30%;
+            width: 100%;
+            margin-bottom: 5px;
+
+        } 
+        .dashboard-left-lower{
+            display: flex;
+            flex-direction: column;
+            height: 50%;
+            width: 100%;
+            margin-bottom: 5px;
+
+            .workout-container{
+                height: 100%;
+                margin-top: 5px;
+                border-radius: 30px;
+
+                .exercise-name{
+                    text-align: left;
+                    margin-left: 20px;
+                    margin-top: 20px;
+                    line-height: 15px;
+                    font-size: 25px;
+                    font-weight: 600;
+                    font-family: "Helvetica Neue";
+                }
+
+                .exercise-burn{
+                    width: 15%;
+                    height: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: 25px;
+                }
+            }
+        }
+        .dashboard-left-middle{
+            height: 20%;
+            flex-direction: column;
+            display: flex;
+            background: white;
+            margin-bottom: 5px;
+            border-radius: 30px;
+            font-family: "Helvetica Neue";
+
+            .quote-title{
+                width: 60%;
+                float: left;
+                color: #4b4d4b;
+                height: 30%;
+                display: inline-flex;
+                text-align: left;
+                margin-left: 20px;
+                margin-top: 5px;
+                align-items: center;
+                font-size: 20px;
+                font-weight: 400;
+            }
+
+            .quote-container{
+                height: 50%;
+                font-size: 25px;
+                font-weight: 100;
+                margin-left: 20px;
+                text-align: left;
+                display: inline-flex;
+                align-items: center;
+                justify-content: left;
+            }
+            
+        }
+    }
+    .dashboard-body-right{
+        display: flex;
+        flex-direction: column;
+        width: 48%;
+        height: 100%;
+        background: transparent;
+
+        .dashboard-right-upper{
+            background: transparent;
+            height: 50%;
+            display: flex;
+            flex-direction: row;
+            border-radius: 30px;
+            margin-bottom: 5px;
+
+            .exercise-category{
+                width: 25%;
+                margin-right: 5px;
+                border: 3px solid white;
+                opacity: 0.8;
+                border-radius: 30px;
+                display: block;
+            }
+            .exercise-icon-box{
+                width: 50%;
+                display: inline-block;
+                margin: 106px auto;
+                background: transparent;
+                padding: 10px 0px;
+            }
+            .mat-icon{
+                user-select: none;
+                background-repeat: no-repeat;
+                display: inline-block;
+                fill: white;
+                height: 50px !important;
+                width: 50px !important;
+                overflow: hidden;
+            }
+        }
+        .dashboard-right-lower{
+            display: flex;
+            height: 50%;
+            flex-direction: row;
+            .dashboard-lower-left{
+                background: rgb(255, 255, 255, 0.4);
+                width: 30%;
+                display: flex;
+                height: 105%;
+                border-radius: 30px;
+                margin-right: 5px;
+                .next-workout-container{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 30px;
+                }
+                .workout-line-1{
+                    position: absolute;
+                    margin-top: 20px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #4b4c4d;
+                    margin-left: 8px;
+                    font-family: "Helvetica Neue";
+                    margin-bottom: 20px;
+                }
+                .workout-line-2{
+                    position: absolute;
+                    padding-top: 22px;
+                    margin-top: 20px;
+                    margin-left: 8px;
+                    color: black;
+                    font-weight: 800;
+                    font-size: 20px;
+                    font-family: "Helvetica Neue";
+                }
+            }
+
+            .dashboard-lower-right{
+                background: transparent;
+                width: 70%;
+                display: flex;
+                height:100%;
+                flex-direction: column;
+                border-radius: 30px;
+            }
+        }
+    }
+
+    .meal-container,.exercise-container{
+        width: 100%;
+        margin-bottom: 5px;
+        height: 33%;
+        border: 1px solid white;
+        background: linear-gradient(100deg, transparent, #a2a2a3);
+        border-radius: 30px;
+        display: flex;
+        flex-direction: row;
+
+        .meal-info, .exercise-info{
+            width: 85%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .meal-type{
+                text-align: left;
+                margin-left: 20px;
+                margin-top: 10px;
+                font-size: 17px;
+                font-weight: 200;
+                font-family: "Helvetica Neue";
+            }
+
+            .meal-name{
+                text-align: left;
+                margin-left: 20px;
+                line-height: 15px;
+                font-size: 25px;
+                font-weight: 600;
+                font-family: "Helvetica Neue";
+            }
+
+            .meal-time,.exercise-time{
+                text-align: left;
+                margin-left: 20px;
+                font-size: 12px;
+                font-weight: 200;
+                font-family: "Helvetica Neue";
+            }
+        }
+
+        .meal-calories{
+            width: 15%;
+            background: #e6e6e6;
+            height: 75%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 12px;
+            margin-right: 10px;
+            border-radius: 30%;
+        }
+
+        .calorie-count{
+            margin-top: 10px;
+            color: #4b4d4b;
+            font-family: "Helvetica Neue";
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .calorie-unit{
+            color: #4b4d4b;
+            font-family: "Helvetica Neue";
+            font-size: 15px;
+            margin-top: -5px;
+            font-weight: 400;
+        }
+    }
+}
+
+.icon-box{
+    width: 7%;
+    height: 50%;
+    margin-right: 15px;
+    display: inline-block;
+    background: white;
+    border-radius: 50%;
+    float: left;
+    padding: 10px 10px;
+    
+}
+.mat-icon{
+    user-select: none;
+    background-repeat: no-repeat;
+    display: inline-block;
+    fill: currentColor;
+    height: 20px !important;
+    width: 20px !important;
+    overflow: hidden;
+}

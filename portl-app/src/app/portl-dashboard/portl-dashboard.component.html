@@ -1,0 +1,312 @@
+<div class="dashboard-container">
+    <div class="dashboard-header">
+        <div class="menu-container" style="width: 40%;display: block;">
+            <div class="icon-box">
+                <mat-icon svgIcon="menu">
+                </mat-icon>
+            </div>
+            <div class="icon-box">
+                <mat-icon svgIcon="notif">
+                </mat-icon>
+            </div>
+            <div class="icon-box">
+                <mat-icon svgIcon="graph">
+                </mat-icon>
+            </div>
+            
+        </div>
+        <div class="company-logo-container">
+            <img src="../assets/portl-black.png" alt="Portl Logo" style="width: 35%;
+            height: 75%;
+            margin-right: 100px;">
+        </div>
+        <div class="user-profile-container">
+            <div class="user-profile-image-box">
+                <img class="user-profile-image" src="../assets/profile.jpg" alt="Profile Picture" >
+            </div>
+            <div class="user-profile-name-box">
+                <div class="user-profile-name-upper"> Hello Again !</div>
+                <div class="user-profile-name-lower">Alex Evans</div>
+            </div>
+            <mat-icon svgIcon="redirect">
+            </mat-icon>
+
+        </div>
+    </div>
+    <div class="dashboard-info">
+            <div class="date-container">
+                <div style="width: 100%; display: block;">
+                    <div class="date-box">
+                        {{this.fullDate}}
+                    </div>
+                    <div class="calendar-icon-box">
+                        <mat-icon class= "calendar-icon"svgIcon="calendar">
+                        </mat-icon>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="days-container" style="width:60%">
+                03 / 07 Days
+            </div>
+            <div class="search-container">
+                <div class="search-icon-box">
+                    <mat-icon class= "search-icon" svgIcon="search"></mat-icon>
+                </div>
+                <div class="search-bar-box">
+                    <input class="dashboard-search-bar" type="text" placeHolder="Search" [(ngModel)]="this.searchText" />
+                </div>
+            </div>
+    </div>
+    <div class="dashboard-body">
+        <div class = "dashboard-body-left">
+                <div class="dashboard-left-upper">
+                    <div class="dashboard-title-bar">
+                        <span class ="title-box">
+                            Activity
+                        </span>
+                    </div>
+                    <div class="dashboard-activity-box">
+                        <div class="activity-type" style="background: linear-gradient(30deg, orange, transparent);">
+                            <div class="activity-icon-box">
+                                <mat-icon class="activity-icon" svgIcon="fire">
+                                </mat-icon>
+                            </div>
+                            <span class="activity-value">
+                                320 kcal
+                            </span>
+                        </div>
+                        <div class="activity-type" style="background: linear-gradient(30deg, #60b5da, transparent);">
+                            <div class="activity-icon-box">
+                                <mat-icon class="activity-icon" svgIcon="time">
+                                </mat-icon>
+                            </div>
+                            <span class="activity-value">
+                                02:30 hrs
+                            </span>
+                        </div>
+                        <div class="activity-type" style="background: linear-gradient(30deg, #d74949, transparent);">
+                            <div class="activity-icon-box">
+                                <mat-icon class="activity-icon" svgIcon="cardio">
+                                </mat-icon>
+                            </div>
+                            <span class="activity-value">
+                                01:20 hrs
+                            </span>
+                        </div>
+                        <div class="activity-type" style="background: linear-gradient(30deg, #64db64, transparent);">
+                            <div class="activity-icon-box">
+                                <mat-icon class="activity-icon" svgIcon="exercises">
+                                </mat-icon>
+                            </div>
+                            <span class="activity-value">
+                                3 workouts
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-left-middle">
+                    <span class="quote-title">
+                        Motivation Of The Day !
+                    </span>
+                    <span class="quote-container">
+                        "Don't wish for it , Work for it !"
+                    </span>
+
+                </div>
+                <div class="dashboard-left-lower">
+                    <div class="dashboard-title-bar" style="height: 10% !important;">
+                        <span class ="title-box">
+                            Today's Workouts
+                        </span>
+                    </div>
+
+                    <div class="workout-container">
+                        <div class="exercise-container" style="height: 22%;">
+                            <div class="exercise-info" style="justify-content: center;">
+                                <span class="exercise-name">
+                                    Full Body Conditioning
+                                </span>
+                                <span class="exercise-time">
+                                    10:00 AM
+                                </span>
+                            </div>
+                            <div class="exercise-burn">
+                                <span class="calorie-count">
+                                    280
+                                </span>
+                                <span class="calorie-unit">
+                                    kcal
+                                </span>
+                            </div>
+
+                        </div>
+                        <div class="exercise-container" style="height: 22%;">
+                            <div class="exercise-info" style="justify-content: center;">
+                                <span class="exercise-name">
+                                    Cardio Rush
+                                </span>
+                                <span class="exercise-time">
+                                    14:30 PM
+                                </span>
+                            </div>
+                            <div class="exercise-burn">
+                                <span class="calorie-count">
+                                    320
+                                </span>
+                                <span class="calorie-unit">
+                                    kcal
+                                </span>
+                            </div>
+
+                        </div>
+                        <div class="exercise-container" style="height: 22%;">
+                            <div class="exercise-info" style="justify-content: center;">
+                                <span class="exercise-name">
+                                    Power Yoga
+                                </span>
+                                <span class="exercise-time">
+                                    17:00 PM
+                                </span>
+                            </div>
+                            <div class="exercise-burn">
+                                <span class="calorie-count">
+                                    190
+                                </span>
+                                <span class="calorie-unit">
+                                    kcal
+                                </span>
+                            </div>
+
+                        </div>
+                        <div class="exercise-container" style="height: 22%;">
+                            <div class="exercise-info" style="justify-content: center;">
+                                <span class="exercise-name">
+                                    Functional
+                                </span>
+                                <span class="exercise-time">
+                                    21:00 PM
+                                </span>
+                            </div>
+                            <div class="exercise-burn">
+                                <span class="calorie-count">
+                                    220
+                                </span>
+                                <span class="calorie-unit">
+                                    kcal
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class = "dashboard-body-right">
+                <div class="dashboard-right-upper">
+                    <div class="exercise-category" style="background: radial-gradient(#4feffc, #1741a5);">
+                        <div class="exercise-icon-box">
+                            <mat-icon svgIcon="water">
+                            </mat-icon>
+                        </div>
+                    </div>
+                    <div class="exercise-category" style="background: radial-gradient(orange, #c41212);">
+                        <div class="exercise-icon-box">
+                            <mat-icon  svgIcon="fire">
+                            </mat-icon>
+                        </div>
+                    </div>
+                    <div class="exercise-category" style="background: radial-gradient(#d0bfbf, #6ad9f1);">
+                        <div class="exercise-icon-box">
+                            <mat-icon svgIcon="air">
+                            </mat-icon>
+                        </div>
+                    </div>
+                    <div class="exercise-category" style="background: radial-gradient(#8de08d, #22590c);">
+                        <div class="exercise-icon-box">
+                            <mat-icon  svgIcon="earth">
+                            </mat-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-right-lower">
+                    <div class="dashboard-lower-left">
+                        <img class="next-workout-container" src="../assets/next-exercise.jpg" alt="Next Workout">
+                        <div class="workout-line-1">Upcoming Workout:</div>
+                        <div class="workout-line-2">Power Yoga</div>
+                    </div>
+                    <div class="dashboard-lower-right">
+                        <div class="meal-container">
+                            <div class="meal-info">
+                                <span class="meal-type">
+                                    Breakfast
+                                </span>
+                                <span class="meal-name">
+                                    Triple Berry Smoothie Bowl
+                                </span>
+                                <span class="meal-time">
+                                    8:00 AM
+                                </span>
+                            </div>
+                            <div class="meal-calories">
+                                    <span class="calorie-count">
+                                        121
+                                    </span>
+                                    <span class="calorie-unit">
+                                        kcal
+                                    </span>
+                            </div>
+
+                        </div>
+                        <div class="meal-container">
+                            <div class="meal-info">
+                                <span class="meal-type">
+                                    Lunch
+                                </span>
+                                <span class="meal-name">
+                                    Avocado Toast with Eggs
+                                </span>
+                                <span class="meal-time">
+                                    1:00 PM
+                                </span>
+
+                            </div>
+                            <div class="meal-calories">
+                                <span class="calorie-count">
+                                    284
+                                </span>
+                                <span class="calorie-unit">
+                                    kcal
+                                </span>
+                        </div>
+
+                        </div>
+                        <div class="meal-container">
+                            <div class="meal-info">
+                                <span class="meal-type">
+                                    Dinner
+                                </span>
+                                <span class="meal-name">
+                                    Grilled Chicken with Veggies
+                                </span>
+                                <span class="meal-time">
+                                    7:30 PM
+                                </span>
+                            </div>
+                            <div class="meal-calories">
+                                <span class="calorie-count">
+                                    427
+                                </span>
+                                <span class="calorie-unit">
+                                    kcal
+                                </span>
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+        </div>
+    </div>
+</div>
+
+
