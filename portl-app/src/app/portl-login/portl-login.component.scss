@@ -1,0 +1,82 @@
+.login-box{
+    position: fixed;
+    width: 500px;
+    float: left;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 20%;
+    border: 2px solid #f5f7f9;
+    border-radius: 25px;
+    max-height: calc(100% - 50px);
+}
+
+.company-logo-container{
+    margin-top: 30px;
+}
+
+.login-page-container,.background-media {
+    position: fixed;
+    background-color: aqua;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.login-background{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.submit-btn-field{
+    cursor: pointer;
+    color: white;
+    margin-top: 20px;
+    font-family: Inter-Medium, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    border: 1px solid transparent;
+    transition: all 250ms ease 0s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #858585;
+    font-size: 14px;
+    line-height: 25px;
+    border-radius: 5px;
+    padding: 17px 20px;
+    font-weight: 700;
+    width: 100%;
+}
+
+.login-body,.login-input-box{
+    display: flex;
+    height: 90%;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-input-container{
+    margin-top: -50px;
+}
+
+.credential-field{
+    width: 270px;
+    line-height: 25px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.6);
+    outline: none;
+    color: #858585;
+    font-size: 14px;
+    font-family: Inter-Medium, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
